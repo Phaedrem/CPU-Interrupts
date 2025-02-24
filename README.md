@@ -1,1 +1,3 @@
 # CPU-Interrupts
+
+This is a brief program that very lightly mimics the interrupt process a single thread CPU experiences during running. When an interrupt occurs via something such as a keyboard or network input, a single-thread CPU temporarily pauses its current task by saving its state (like the program counter and registers). It then jumps to a specific interrupt service routine (ISR) designated to handle the event. Once the ISR completes its work, the CPU restores the saved state and resumes the paused task, ensuring the interrupt is processed without permanently disrupting the main execution flow. The actual process is significantly more advanced, especially with multi-threaded CPUs, but this project was just meant to introduce the concept. 
